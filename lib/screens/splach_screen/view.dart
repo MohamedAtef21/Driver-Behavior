@@ -37,7 +37,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
             Text(
               "DriveSafe",
               style: GoogleFonts.montserrat(
-                fontSize: 28,
+                fontSize: 28.sp,
                 fontWeight: FontWeight.w800,
                 color: const Color(0xffDDDDDD),
               )
@@ -46,7 +46,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
             Text(
               "Because, It pays off ",
               style: GoogleFonts.montserrat(
-                fontSize: 14,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.normal,
                 color: const Color(0xffDDDDDD),
               ),

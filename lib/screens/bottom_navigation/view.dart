@@ -107,7 +107,7 @@ class _ItemBottom extends StatelessWidget {
                 Text(
                   title,
                   style: GoogleFonts.inter(
-                    fontSize: 10,
+                    fontSize: 10.sp,
                     fontWeight: FontWeight.w500,
                     color: isSelected ? const Color(0xff121212) : const Color(0xff4B4B4B),
                   ),

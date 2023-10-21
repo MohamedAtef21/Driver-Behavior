@@ -34,8 +34,8 @@ class TripDetailsView extends StatelessWidget {
     return Material(
       elevation: 5,
       shadowColor: const Color(0xff5A6CEA).withOpacity(.4),
-      borderRadius: const BorderRadius.all(
-        Radius.circular(20),
+      borderRadius: BorderRadius.all(
+        Radius.circular(20.r),
       ),
       child: Container(
         height: 246.h,
@@ -60,7 +60,7 @@ class TripDetailsView extends StatelessWidget {
                           Text(
                             goingFrom,
                             style: GoogleFonts.inter(
-                              fontSize: 12,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w300,
                               color: const Color(0xff121212),
                             ),
@@ -69,7 +69,7 @@ class TripDetailsView extends StatelessWidget {
                           Text(
                             goingTo,
                             style: GoogleFonts.inter(
-                              fontSize: 12,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w300,
                               color: const Color(0xff121212),
                             ),
@@ -80,7 +80,7 @@ class TripDetailsView extends StatelessWidget {
                   ),
                   SizedBox(width: 190.w),
                   CircularPercentIndicator(
-                    radius: 20,
+                    radius: 20.r,
                     percent: percentAVG,
                     progressColor: percentColor,
                     backgroundColor: Colors.transparent,
@@ -88,7 +88,7 @@ class TripDetailsView extends StatelessWidget {
                     center: Text(
                       "$percent%",
                       style: GoogleFonts.inter(
-                          fontSize: 10,
+                          fontSize: 10.sp,
                           fontWeight: FontWeight.w800,
                           color: const Color(0xff848484)),
                     ),
@@ -108,7 +108,7 @@ class TripDetailsView extends StatelessWidget {
                   Text(
                     "Total Alerts : $totalAlerts ",
                     style: GoogleFonts.inter(
-                      fontSize: 12,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xff4B4B4B),
                     ),
@@ -123,7 +123,7 @@ class TripDetailsView extends StatelessWidget {
                   Text(
                     perf,
                     style: GoogleFonts.inter(
-                      fontSize: 12,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xff4B4B4B),
                     ),

@@ -24,14 +24,14 @@ class TripDiagnoseView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(totalDeist,style: GoogleFonts.inter(
-                  fontSize: 15,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xffF1F1F1),
                 ),
                 ),
                 SizedBox(height: 5.h),
                 Text("Total Distance",style: GoogleFonts.inter(
-                  fontSize: 10,
+                  fontSize: 10.sp,
                   fontWeight: FontWeight.normal,
                   color: const Color(0xffF1F1F1),
                 ),
@@ -48,14 +48,14 @@ class TripDiagnoseView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(totalTime,style: GoogleFonts.inter(
-                  fontSize: 15,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xffF1F1F1),
                 ),
                 ),
                 SizedBox(height: 5.h),
                 Text("Time",style: GoogleFonts.inter(
-                  fontSize: 10,
+                  fontSize: 10.sp,
                   fontWeight: FontWeight.normal,
                   color: const Color(0xffF1F1F1),
                 ),
@@ -72,14 +72,14 @@ class TripDiagnoseView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(highSpeed,style: GoogleFonts.inter(
-                  fontSize: 15,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xffF1F1F1),
                 ),
                 ),
                 SizedBox(height: 5.h),
                 Text("Highest Speed",style: GoogleFonts.inter(
-                  fontSize: 10,
+                  fontSize: 10.sp,
                   fontWeight: FontWeight.normal,
                   color: const Color(0xffF1F1F1),
                 ),

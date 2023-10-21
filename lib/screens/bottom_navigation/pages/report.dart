@@ -66,7 +66,7 @@ class _ReportViewState extends State<ReportView> {
                 Text(
                   "Daily Report",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -97,7 +97,7 @@ class _ReportViewState extends State<ReportView> {
                         Text(
                           "17 June 2021",
                           style: GoogleFonts.inter(
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.normal,
                             color: const Color(0xff4B4B4B),
                           ),
@@ -115,7 +115,7 @@ class _ReportViewState extends State<ReportView> {
                 Text(
                   "12 ",
                   style: GoogleFonts.inter(
-                    fontSize: 20,
+                    fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xffF66262),
                   ),
@@ -123,7 +123,7 @@ class _ReportViewState extends State<ReportView> {
                 Text(
                   "Alerts",
                   style: GoogleFonts.inter(
-                    fontSize: 20,
+                    fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
                     color: const Color(0xff121212),
                   ),
@@ -154,7 +154,7 @@ class _ReportViewState extends State<ReportView> {
                         Text(
                           "Seat Belt Alerts - 1",
                           style: GoogleFonts.inter(
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.normal,
                             color: const Color(0xff848484),
                           ),
@@ -171,7 +171,7 @@ class _ReportViewState extends State<ReportView> {
                         Text(
                           "Over Speed Alerts - 5",
                           style: GoogleFonts.inter(
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.normal,
                             color: const Color(0xff848484),
                           ),
@@ -192,7 +192,7 @@ class _ReportViewState extends State<ReportView> {
                         Text(
                           "Harsh brake Alerts - 3",
                           style: GoogleFonts.inter(
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.normal,
                             color: const Color(0xff848484),
                           ),
@@ -209,7 +209,7 @@ class _ReportViewState extends State<ReportView> {
                         Text(
                           "Car-Idling Alerts - 3",
                           style: GoogleFonts.inter(
-                            fontSize: 12,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.normal,
                             color: const Color(0xff848484),
                           ),
@@ -229,7 +229,7 @@ class _ReportViewState extends State<ReportView> {
                     Text(
                       "Total Trips",
                       style: GoogleFonts.inter(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff4B4B4B)),
                     ),
@@ -237,7 +237,7 @@ class _ReportViewState extends State<ReportView> {
                     Text(
                       "Total Distance Driven ",
                       style: GoogleFonts.inter(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff4B4B4B)),
                     ),
@@ -245,7 +245,7 @@ class _ReportViewState extends State<ReportView> {
                     Text(
                       "Highest Speed of all day ",
                       style: GoogleFonts.inter(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff4B4B4B)),
                     ),
@@ -258,7 +258,7 @@ class _ReportViewState extends State<ReportView> {
                     Text(
                       "1",
                       style: GoogleFonts.inter(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff4B4B4B)),
                     ),
@@ -267,7 +267,7 @@ class _ReportViewState extends State<ReportView> {
                       ""
                           ": 110 km",
                       style: GoogleFonts.inter(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff4B4B4B)),
                     ),
@@ -275,7 +275,7 @@ class _ReportViewState extends State<ReportView> {
                     Text(
                       ": 140 km/h",
                       style: GoogleFonts.inter(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xffF66262)),
                     ),

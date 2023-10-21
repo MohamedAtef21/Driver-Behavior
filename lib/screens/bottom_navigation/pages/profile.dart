@@ -52,7 +52,7 @@ class ProfileView extends StatelessWidget {
                   Text(
                     "Driver Profiles",
                     style: GoogleFonts.inter(
-                        fontSize: 14,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w600,
                         color: const Color(0xff4B4B4B)),
                   ),

@@ -15,8 +15,8 @@ class DriverProfileView extends StatelessWidget {
     return Material(
       elevation: 5,
       shadowColor: const Color(0xff5A6CEA).withOpacity(.4),
-      borderRadius: const BorderRadius.all(
-        Radius.circular(20),
+      borderRadius: BorderRadius.all(
+        Radius.circular(20.r),
       ),
       child: Container(
         height: 160.h,
@@ -44,7 +44,7 @@ class DriverProfileView extends StatelessWidget {
                       Text(
                         driverName,
                         style: GoogleFonts.inter(
-                          fontSize: 14,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff4B4B4B),
                         ),
@@ -53,7 +53,7 @@ class DriverProfileView extends StatelessWidget {
                       Text(
                         driverMail,
                         style: GoogleFonts.inter(
-                          fontSize: 10,
+                          fontSize: 10.sp,
                           fontWeight: FontWeight.normal,
                           color: const Color(0xff4B4B4B),
                         ),
@@ -70,7 +70,7 @@ class DriverProfileView extends StatelessWidget {
                     center: Text(
                       "$percent%",
                       style: GoogleFonts.inter(
-                          fontSize: 10,
+                          fontSize: 10.sp,
                           fontWeight: FontWeight.w800,
                           color: const Color(0xff4B4B4B)),
                     ),
@@ -82,7 +82,7 @@ class DriverProfileView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Total Trips : $totalTrips",style: GoogleFonts.inter(
-                    fontSize: 12,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w500,
                     color: const Color(0xff4B4B4B),
                   ),),

@@ -68,7 +68,7 @@ class DashBoardView extends StatelessWidget {
                           Text(
                             "Welcome, Mohamed ",
                             style: GoogleFonts.inter(
-                                fontSize: 21, color: const Color(0xffDDDDDD)),
+                                fontSize: 21.sp, color: const Color(0xffDDDDDD)),
                           ),
                           SizedBox(height: 5.h),
                           Row(
@@ -76,7 +76,7 @@ class DashBoardView extends StatelessWidget {
                               Text(
                                 "Check your Overall Trip Performance ",
                                 style: GoogleFonts.inter(
-                                    fontSize: 12,
+                                    fontSize: 12.sp,
                                     color: const Color(0xffDDDDDD)),
                               ),
                               SvgPicture.asset("assets/icons/arrow_right.svg"),

@@ -41,7 +41,7 @@ class MenuView extends StatelessWidget {
                     Text(
                       "Mohamed Atef",
                       style: GoogleFonts.inter(
-                        fontSize: 18,
+                        fontSize: 18.sp,
                         fontWeight: FontWeight.bold,
                         color: const Color(0xff4B4B4B),
                       ),
@@ -50,7 +50,7 @@ class MenuView extends StatelessWidget {
                     Text(
                       "MohamedAtef@gmail.com",
                       style: GoogleFonts.inter(
-                        fontSize: 12,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.normal,
                         color: const Color(0xff4B4B4B),
                       ),
@@ -71,7 +71,7 @@ class MenuView extends StatelessWidget {
                 Text(
                   "Profile",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w300,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -90,7 +90,7 @@ class MenuView extends StatelessWidget {
                 Text(
                   "About",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w300,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -109,7 +109,7 @@ class MenuView extends StatelessWidget {
                 Text(
                   "Notifications",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w300,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -128,7 +128,7 @@ class MenuView extends StatelessWidget {
                 Text(
                   "Settings",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w300,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -147,7 +147,7 @@ class MenuView extends StatelessWidget {
                 Text(
                   "Help and Support",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w300,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -166,7 +166,7 @@ class MenuView extends StatelessWidget {
                 Text(
                   "Logout",
                   style: GoogleFonts.inter(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w300,
                     color: const Color(0xff4B4B4B),
                   ),
@@ -192,7 +192,7 @@ class MenuView extends StatelessWidget {
                   Text(
                     "17 june 2021 at 11:30 pm",
                     style: GoogleFonts.inter(
-                        fontSize: 10,
+                        fontSize: 10.sp,
                         fontWeight: FontWeight.bold,
                         color: const Color(0xff4B4B4B)),
                   ),
