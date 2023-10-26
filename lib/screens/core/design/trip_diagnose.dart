@@ -9,16 +9,16 @@ class TripDiagnoseView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 70.h,
-      width: 334.w,
-      decoration: BoxDecoration(
-          color: const Color(0xff121212),
-          borderRadius: BorderRadius.circular(20.r)
+    return Card(
+      elevation: 5,
+      color: const Color(0xff121212),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.r)
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.only(start: 19,top: 16,end: 19),
+        padding: const EdgeInsetsDirectional.only(start: 19,top: 10,end: 19,bottom: 10),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,12 +38,10 @@ class TripDiagnoseView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(width: 20.w),
             Padding(
               padding: const EdgeInsetsDirectional.only(bottom: 10),
               child: SvgPicture.asset("assets/icons/line.svg"),
             ),
-            SizedBox(width: 20.w),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -62,12 +60,10 @@ class TripDiagnoseView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(width: 20.w),
             Padding(
               padding: const EdgeInsetsDirectional.only(bottom: 10),
               child: SvgPicture.asset("assets/icons/line.svg"),
             ),
-            SizedBox(width: 20.w),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [

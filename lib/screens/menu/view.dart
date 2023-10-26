@@ -24,7 +24,7 @@ class MenuView extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsetsDirectional.only(top: 76, start: 50),
+        padding: const EdgeInsetsDirectional.only(top: 76, start: 50,bottom: 10),
         child: Column(
           children: [
             Row(

@@ -59,7 +59,7 @@ class DashBoardView extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.only(start: 22, top: 20),
+                  padding: const EdgeInsetsDirectional.only(start: 22, top: 16),
                   child: Row(
                     children: [
                       Column(

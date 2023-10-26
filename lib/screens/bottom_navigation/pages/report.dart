@@ -88,7 +88,7 @@ class _ReportViewState extends State<ReportView> {
                   color: const Color(0xffDDDDDD),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.only(start: 10, end: 10),
+                  padding: const EdgeInsetsDirectional.only(start: 10, end: 10,bottom: 20),
                   child: Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
