@@ -11,6 +11,7 @@ class TripDiagnoseView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 5,
+
       color: const Color(0xff121212),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.r)
