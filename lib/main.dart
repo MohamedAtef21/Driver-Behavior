@@ -1,5 +1,4 @@
 import 'package:drivesafe/screens/splach_screen/view.dart';
-import 'package:drivesafe/screens/trip_details_map/maps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,6 +22,7 @@ class MainPage extends StatelessWidget {
             body: PageView(
               children: const [
                 SplashScreenView(),
+                //MapSpeedView(),
               ],
             ),
           ),

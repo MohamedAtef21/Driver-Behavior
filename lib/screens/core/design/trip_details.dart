@@ -35,7 +35,7 @@ class TripDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        navigateTo(context, FurtherTripDetailsView());
+        navigateTo(context, const FurtherTripDetailsView());
       },
       child: Card(
         elevation: 5,

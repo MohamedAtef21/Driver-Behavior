@@ -1,4 +1,3 @@
-import 'package:drivesafe/screens/core/design/trip_diagnose.dart';
 import 'package:drivesafe/screens/trip_details_map/maps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -6,9 +5,14 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
-class FurtherTripDetailsView extends StatelessWidget {
+class FurtherTripDetailsView extends StatefulWidget {
   const FurtherTripDetailsView({Key? key}) : super(key: key);
 
+  @override
+  State<FurtherTripDetailsView> createState() => _FurtherTripDetailsViewState();
+}
+
+class _FurtherTripDetailsViewState extends State<FurtherTripDetailsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +22,7 @@ class FurtherTripDetailsView extends StatelessWidget {
         backgroundColor: const Color(0xff121212),
       ),
       body: Padding(
-        padding: EdgeInsetsDirectional.only(top: 20, start: 20, end: 20),
+        padding: const EdgeInsetsDirectional.only(top: 20, start: 20, end: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -27,7 +31,7 @@ class FurtherTripDetailsView extends StatelessWidget {
               style: GoogleFonts.inter(
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
-                  color: Color(0xff4B4B4B)),
+                  color: const Color(0xff4B4B4B)),
             ),
             SizedBox(height: 23.h),
             Row(
@@ -66,7 +70,7 @@ class FurtherTripDetailsView extends StatelessWidget {
                     CircularPercentIndicator(
                       radius: 20.r,
                       percent: 0.7,
-                      progressColor: Color(0xffEFA83E),
+                      progressColor: const Color(0xffEFA83E),
                       backgroundColor: Colors.transparent,
                       circularStrokeCap: CircularStrokeCap.round,
                       center: Text(
@@ -83,7 +87,7 @@ class FurtherTripDetailsView extends StatelessWidget {
                       style: GoogleFonts.inter(
                           fontSize: 10,
                           fontWeight: FontWeight.w500,
-                          color: Color(0xff4B4B4B)),
+                          color: const Color(0xff4B4B4B)),
                     ),
                   ],
                 ),
@@ -91,24 +95,24 @@ class FurtherTripDetailsView extends StatelessWidget {
             ),
             SizedBox(height: 26.h),
             Container(
-              height: 382.h,
+              height: 500.h,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.r),
                 border: Border.all(
-                  color: Color(0xff000000),
+                  color: const Color(0xff000000),
                 ),
               ),
-              child: TripDetailsMapView(),
+              child: const TripDetailsMapView(),
             ),
-            SizedBox(
-              height: 70.h,
-              child: TripDiagnoseView(
-                totalDeist: "110 Km",
-                totalTime: "1 h 32 m",
-                highSpeed: "140 km/h",
-              ),
-            ),
+            // SizedBox(
+            //   height: 70.h,
+            //   child: const TripDiagnoseView(
+            //     totalDeist: "110 Km",
+            //     totalTime: "1 h 32 m",
+            //     highSpeed: "140 km/h",
+            //   ),
+            // ),
           ],
         ),
       ),
