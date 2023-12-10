@@ -5,6 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
+import 'maps_edit.dart';
+
 class FurtherTripDetailsView extends StatefulWidget {
   const FurtherTripDetailsView({Key? key}) : super(key: key);
 
@@ -103,7 +105,7 @@ class _FurtherTripDetailsViewState extends State<FurtherTripDetailsView> {
                   color: const Color(0xff000000),
                 ),
               ),
-              child: const TripDetailsMapView(),
+              child: const MapEditView(),
             ),
             // SizedBox(
             //   height: 70.h,

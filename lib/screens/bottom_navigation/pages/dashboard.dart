@@ -61,6 +61,7 @@ class DashBoardView extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.only(start: 22, top: 16),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,7 +85,7 @@ class DashBoardView extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(width: 93.w),
+                      //SizedBox(width: 93.w),
                       Padding(
                         padding: const EdgeInsetsDirectional.only(bottom: 29),
                         child: CircularPercentIndicator(

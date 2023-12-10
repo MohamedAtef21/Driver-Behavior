@@ -36,17 +36,17 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
   void initState() {
     super.initState();
     getMarker();
-    // _determinePosition().then((position) {
-    //   _goToMyPosition(position);
-    // });
+     _determinePosition().then((position) {
+      _goToMyPosition(position);
+    });
     _startLocationTracking();
   }
 
   void _startLocationTracking() {
     _positionStreamSubscription =
         Geolocator.getPositionStream().listen((Position position) {
-          _updateCameraPosition(position, context);
-        });
+      _updateCameraPosition(position, context);
+    });
   }
 
   void _stopLocationTracking() {
@@ -59,24 +59,24 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
         LatLng(currentPosition.latitude, currentPosition.longitude);
 
     if (_markers.isNotEmpty) {
-  final LatLng markerLatLng = _markers.first.position;
+      final LatLng markerLatLng = _markers.first.position;
 
-  PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-    "AIzaSyAsZLJPlAakAJj92D8war4fCCoPqzzA2kU",
-    PointLatLng(currentLatLng.latitude, currentLatLng.longitude),
-    PointLatLng(markerLatLng.latitude, markerLatLng.longitude),
-    travelMode: TravelMode.driving,
-  );
+      PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
+        "AIzaSyAsZLJPlAakAJj92D8war4fCCoPqzzA2kU",
+        PointLatLng(currentLatLng.latitude, currentLatLng.longitude),
+        PointLatLng(markerLatLng.latitude, markerLatLng.longitude),
+        travelMode: TravelMode.driving,
+      );
 
-  if (result.points.isNotEmpty) {
-    setState(() {
-      polylineCoordinates.clear();
-      for (var point in result.points) {
-        polylineCoordinates.add(LatLng(point.latitude, point.longitude));
+      if (result.points.isNotEmpty) {
+        setState(() {
+          polylineCoordinates.clear();
+          for (var point in result.points) {
+            polylineCoordinates.add(LatLng(point.latitude, point.longitude));
+          }
+        });
       }
-    });
-  }
-}
+    }
   }
 
   Future<void> _goToMyPosition(Position position) async {
@@ -93,7 +93,7 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
         icon: _markerBitmap!,
         infoWindow: const InfoWindow(
           title: 'My Location',
-          snippet: 'Location 1',
+          snippet: 'Default Location',
         ),
       ));
     });
@@ -110,6 +110,7 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
       _markerBitmap = bitmapDescriptor;
     });
   }
+
 
   void _updateCameraPosition(Position position, BuildContext context) async {
     final GoogleMapController controller = await _controller.future;
@@ -176,7 +177,7 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
         icon: _markerBitmap!,
         infoWindow: const InfoWindow(
           title: 'My Location',
-          snippet: 'Location 2',
+          snippet: 'New Location',
         ),
       ));
     });
@@ -227,6 +228,8 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
           : Stack(
               children: [
                 GoogleMap(
+                  myLocationButtonEnabled: false,
+                  zoomControlsEnabled: false,
                   mapType: MapType.normal,
                   initialCameraPosition: const CameraPosition(
                     target: LatLng(0, 0),
@@ -238,7 +241,8 @@ class _TripDetailsMapViewState extends State<TripDetailsMapView> {
                   },
                   onTap: (LatLng position) {
                     setState(() {
-                      _markers.removeWhere((marker) => marker.position == _selectedPosition);
+                      _markers.removeWhere(
+                          (marker) => marker.position == _selectedPosition);
                       _markers.add(Marker(
                         markerId: MarkerId(position.toString()),
                         position: position,

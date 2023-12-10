@@ -22,7 +22,6 @@ class MainPage extends StatelessWidget {
             body: PageView(
               children: const [
                 SplashScreenView(),
-                //MapSpeedView(),
               ],
             ),
           ),
